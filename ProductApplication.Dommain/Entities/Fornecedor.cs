@@ -1,6 +1,6 @@
 ﻿namespace ProductApplication.Domain.Entities;
 
-public partial class Fornecedor : BaseEntity
+public class Fornecedor : BaseEntity
 {
 
     public string? Descricao { get; set; }

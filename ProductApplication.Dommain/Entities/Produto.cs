@@ -1,6 +1,6 @@
 ﻿namespace ProductApplication.Domain.Entities;
 
-public partial class Produto : BaseEntity
+public class Produto : BaseEntity
 {
     public string Descricao { get; set; } = null!;
 
@@ -10,7 +10,7 @@ public partial class Produto : BaseEntity
 
     public int IdFornecedor { get; set; }
 
-    public sbyte Situacao { get; set; }
+    public bool Situacao { get; set; }
 
     public virtual Fornecedor IdFornecedorNavigation { get; set; } = null!;
 }

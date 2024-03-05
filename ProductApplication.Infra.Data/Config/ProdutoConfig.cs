@@ -22,6 +22,9 @@ namespace ProductApplication.Infra.Data.Config
                     .HasForeignKey(d => d.IdFornecedor)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Produto_Fornecedor");
+
+            builder.Navigation(p => p.IdFornecedorNavigation).AutoInclude();
+            
         }
     }
 }

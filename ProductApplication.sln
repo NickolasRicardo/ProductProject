@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication", "ProductApplication\ProductApplication.csproj", "{E681DD2E-CA5E-42D7-AFF7-604A050D99BF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6E8636F4-21B9-4AA0-BC5A-4420FE652B5C} = {6E8636F4-21B9-4AA0-BC5A-4420FE652B5C}
+		{C2741B55-4B01-4744-BBE6-658DC028485A} = {C2741B55-4B01-4744-BBE6-658DC028485A}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{75F39521-6825-40CB-8FD8-5ACBDDCED2B9}"
 EndProject
@@ -14,6 +18,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{9A9E1371-83C1-4571-8124-384026798416}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.Application", "ProductApplication.Application\ProductApplication.Application.csproj", "{C2741B55-4B01-4744-BBE6-658DC028485A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98B92D30-637A-44E6-8A8A-846BC882C353} = {98B92D30-637A-44E6-8A8A-846BC882C353}
+		{B04CA410-4206-49F7-8A6C-8BAFA030A810} = {B04CA410-4206-49F7-8A6C-8BAFA030A810}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.Domain", "ProductApplication.Dommain\ProductApplication.Domain.csproj", "{37DA5AD7-06AC-4BE9-AF4E-806504C29157}"
 EndProject
@@ -27,9 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.CrossCut
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.CrossCutting.IoC", "ProductApplication.CrossCutting.IoC\ProductApplication.CrossCutting.IoC.csproj", "{6E8636F4-21B9-4AA0-BC5A-4420FE652B5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApplication.Domain.Services", "ProductApplication.Domain.Services\ProductApplication.Domain.Services.csproj", "{98B92D30-637A-44E6-8A8A-846BC882C353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.Domain.Services", "ProductApplication.Domain.Services\ProductApplication.Domain.Services.csproj", "{98B92D30-637A-44E6-8A8A-846BC882C353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApplication.Application.Services", "ProductApplication.Application.Services\ProductApplication.Application.Services.csproj", "{6DD6F8C1-16C2-4038-862B-B0409D1F68AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApplication.Application.Services", "ProductApplication.Application.Services\ProductApplication.Application.Services.csproj", "{6DD6F8C1-16C2-4038-862B-B0409D1F68AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

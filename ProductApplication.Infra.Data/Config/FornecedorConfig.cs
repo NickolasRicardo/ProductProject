@@ -17,7 +17,7 @@ namespace ProductApplication.Infra.Data.Config
                 .HasColumnName("CNPJ");
 
             builder.Property(e => e.Descricao).HasMaxLength(45);
-
+            builder.Navigation(p => p.Produtos).AutoInclude();
         }
     }
 }

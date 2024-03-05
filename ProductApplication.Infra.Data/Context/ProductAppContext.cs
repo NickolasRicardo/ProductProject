@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using ProductApplication.Domain.Entities;
 using ProductApplication.Infra.Data.Config;
-using ProductApplication.Infra.Data.Entities;
 
 namespace ProductApplication.Infra.Data.Context;
 
