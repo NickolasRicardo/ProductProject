@@ -31,7 +31,7 @@ public partial class ProductAppContext : DbContext
 
             var connectionString = configuration.GetConnectionString("DefaultConnection");
 
-            options.UseSqlServer(connectionString);
+            options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
         }
     }
       
